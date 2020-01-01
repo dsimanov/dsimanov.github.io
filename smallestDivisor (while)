@@ -1,0 +1,13 @@
+const smallestDivisor = num => {
+  let divisor = 2;
+  if(num < 1) {
+    return NaN;
+  }
+  if(num === 1) {
+    return num;
+  }
+  while (num % divisor) {
+    divisor++;
+  }
+  return divisor;
+};
