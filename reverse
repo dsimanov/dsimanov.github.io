@@ -1,0 +1,14 @@
+const reverse = (str) => {
+    let counter = 1;
+    let result = "";
+    
+    while (counter <= str.length)
+    {
+      result = result + str[str.length - counter];
+      counter++;
+    }
+    
+    return result;
+  };
+  
+  console.log(reverse("hello, world!"));
